@@ -54,8 +54,24 @@ for (const key in siteContent.nav) {
   anchorElement.innerHTML = element;
 
   index++;
+
+  if (index >= 6) break;
 }
 
 
 
+// CTA SECTION
+
+let ctaText = document.querySelector('h1');
+ctaText.innerHTML = siteContent["cta"]["h1"];
+
+let ctaButton = document.querySelector('.cta button'); 
+ctaButton.innerHTML = siteContent["cta"]["button"];
+
+let ctaImg = document.getElementById('cta-img'); 
+ctaImg.src = siteContent["cta"]["img-src"];
+
+
+
+// MAIN-CONTENT SECTION
 
