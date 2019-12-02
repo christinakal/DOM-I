@@ -52,11 +52,23 @@ for (const key in siteContent.nav) {
 
   const anchorElement = menuElement[index];
   anchorElement.innerHTML = element;
+  anchorElement.style.color = 'green';
 
   index++;
 
   if (index >= 6) break;
 }
+
+const other = document.createElement('a');
+const projects = document.createElement('a');
+
+other.innerHTML = "Other";
+projects.innerHTML = "Projects";
+
+let parent = document.querySelector("nav");
+
+parent.appendChild(other);
+parent.prepend(projects);
 
 
 
@@ -102,3 +114,24 @@ let fifthHeader = document.querySelector('.bottom-content .text-content:nth-chil
 fifthHeader.innerHTML = siteContent["main-content"]["vision-h4"];
 let fifthParagraph = document.querySelector('.bottom-content .text-content:nth-child(3) p');
 fifthParagraph.innerHTML = siteContent["main-content"]["vision-content"]
+
+
+// CONTACT SECTION
+
+let contactHeader = document.querySelector('.contact h4');
+contactHeader.innerHTML = siteContent["contact"]["contact-h4"];
+
+let address = document.querySelector('.contact p:nth-child(2)');
+address.innerHTML = siteContent["contact"][ "address"];
+address.style.width = "20%";
+
+let phone = document.querySelector('.contact p:nth-child(3)');
+phone.innerHTML = siteContent["contact"][ "phone"];
+
+let email = document.querySelector('.contact p:nth-child(4)');
+email.innerHTML = siteContent["contact"][ "email"];
+
+
+// FOOTER
+let footerParagraph = document.querySelector('footer p');
+footerParagraph.innerHTML = siteContent["footer"]["copyright"];
