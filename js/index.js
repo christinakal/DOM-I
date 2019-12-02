@@ -75,3 +75,30 @@ ctaImg.src = siteContent["cta"]["img-src"];
 
 // MAIN-CONTENT SECTION
 
+let firstHeader = document.querySelector('.text-content:nth-child(1) h4');
+firstHeader.innerHTML = siteContent["main-content"]["features-h4"]
+let firstParagraph = document.querySelector('.text-content:nth-child(1) p');
+firstParagraph.innerHTML = siteContent["main-content"]["features-content"]
+
+let secondHeader = document.querySelector('.text-content:nth-child(2) h4');
+secondHeader.innerHTML = siteContent["main-content"]["about-h4"];
+let secondParagraph = document.querySelector('.text-content:nth-child(2) p');
+secondParagraph.innerHTML = siteContent["main-content"]["about-content"];
+
+let middleImg = document.getElementById('middle-img');
+middleImg.src = siteContent["main-content"]["middle-img-src"];
+
+let thirdHeader = document.querySelector('.bottom-content .text-content:nth-child(1) h4');
+thirdHeader.innerHTML = siteContent["main-content"]["services-h4"];
+let thirdParagraph = document.querySelector('.bottom-content .text-content:nth-child(1) p');
+thirdParagraph.innerHTML = siteContent["main-content"]["services-content"]
+
+let forthHeader = document.querySelector('.bottom-content .text-content:nth-child(2) h4');
+forthHeader.innerHTML = siteContent["main-content"]["product-h4"];
+let forthParagraph = document.querySelector('.bottom-content .text-content:nth-child(2) p');
+forthParagraph.innerHTML = siteContent["main-content"]["product-content"]
+
+let fifthHeader = document.querySelector('.bottom-content .text-content:nth-child(3) h4');
+fifthHeader.innerHTML = siteContent["main-content"]["vision-h4"];
+let fifthParagraph = document.querySelector('.bottom-content .text-content:nth-child(3) p');
+fifthParagraph.innerHTML = siteContent["main-content"]["vision-content"]
