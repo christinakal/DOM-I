@@ -40,3 +40,22 @@ const siteContent = {
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+
+// NAV
+let menuElement = document.querySelectorAll('nav > a');
+
+
+let index = 0; //create a counter for keeping track of the elements' position
+for (const key in siteContent.nav) {
+  const element = siteContent.nav[key];
+
+  const anchorElement = menuElement[index];
+  anchorElement.innerHTML = element;
+
+  index++;
+}
+
+
+
+
