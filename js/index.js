@@ -76,6 +76,7 @@ parent.prepend(projects);
 
 let ctaText = document.querySelector('h1');
 ctaText.innerHTML = siteContent["cta"]["h1"];
+ctaText.style.width = '42%';
 
 let ctaButton = document.querySelector('.cta button'); 
 ctaButton.innerHTML = siteContent["cta"]["button"];
