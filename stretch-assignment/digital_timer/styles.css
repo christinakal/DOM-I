@@ -2,28 +2,42 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #f8b195;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.digits{
+  background-color: beige;
+  padding: 5% 10%;
+  text-align: center;
+  border-radius:35px;
+  margin:10%;
+  width: 80%;
 }
 
 .digit {
   display: inline-block;
   font-size: 80px;
-  text-align: center; 
+  text-align: center;
 }
 
 .redDigit {
-  color: red;
+  color: #f67280;
 }
 
 
 .buttons{
   text-align: center; 
   margin-top: 5%;
+  
 }
 
 .buttons button{
  border: none;
- background-color: #43ab92;
+ background-color: #6c5b7b;
  padding: 3% 15%;
+ border-radius: 60px;
  color: white;
- border-radius: 60px
+ 
+ font-size:20px;
 }

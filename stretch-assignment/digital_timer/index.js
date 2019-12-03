@@ -31,10 +31,10 @@ function startTimer(){
         counter += 1;
 
         if ( counter > 8){
-            secondTens.style.color = 'red';
-            secondOnes.style.color = 'red';
-            msHundreds.style.color = 'red';
-            msTens.style.color = 'red';
+            secondTens.style.color = '#f67280';
+            secondOnes.style.color = '#f67280';
+            msHundreds.style.color = '#f67280';
+            msTens.style.color = '#f67280';
         }
         
     
