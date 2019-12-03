@@ -1,16 +1,12 @@
-let endTime = new Date("Dec 2, 2019 12:00:00").getTime();
-console.log(endTime);
+var timeleft = 0;
+var timer = setInterval(function(){
+  let secondTens = document.getElementById('secondTens').innerHTML = 0;
+  let secondOnes = document.getElementById('secondOnes').innerHTML = timeleft;
+  timeleft += 1;
 
-let timer = setInterval(function() {
-
-    let currentTime = new Date().getTime();
-    let t = endTime - currentTime;
-
-    if (t >= 0) {
-        let secs = Math.floor((t % (1000 * 60)) / 1000);
-        console.log(secs);
-
-        document.getElementById("secondTens").innerHTML = secs;
-    }
+  if(timeleft > 10){
+    clearInterval(timer);
+  }
+  
 
 }, 1000);
